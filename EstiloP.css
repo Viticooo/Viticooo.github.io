@@ -1,0 +1,154 @@
+body{
+    background-image: url(https://1.bp.blogspot.com/-bFbvwZ0vII4/W5wzmhnPPWI/AAAAAAAAP48/TRxfYhswbe8sMjCBFruN8fZNiqmDohKzACLcBGAs/s1600/spirited_away_forest_by_reda22-d9twaqa.png);
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+  }
+  
+  header{
+    background-color: rgba(245, 245, 220, 0.134);
+    /* Sombra */
+    box-shadow: black 1px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+  }
+  
+  img{
+    width: 50px;
+    margin: 20px;
+  }
+  
+  img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  
+  .bienvenido{
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bienvenido h1{
+    color: azure;
+    text-shadow: 3px 3px 3px black;
+    transition: 1s;
+    font-size: 60px;
+  }
+
+
+  /* Secciones de informacion */
+  section{
+    background: linear-gradient(to right, rgb(36, 153, 61), rgb(255, 218, 10));
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    margin-bottom: 30px;
+    box-shadow: black 1px 10px 10px;
+  }
+
+  section div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #tec{
+    padding: 30px;
+    /* background-color: rgba(240, 255, 255, 0.137); */
+  }
+
+  section h1{
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px black;
+  }
+
+  /* Segundo Bloque */
+
+
+
+
+  /* Tercer Bloque */
+
+  .C2{
+    height: 600px;
+  }
+
+  .C2 h2{
+    color: black;
+    font-size: 20px;
+  }
+
+  .C2 h2{
+    color: azure;
+    text-shadow: black 1px 10px 10px;
+  }
+
+  .vid{
+    width: 30%;
+    text-align: center;
+    /* background-color: rgba(240, 255, 255, 0.137); */
+  }
+
+  .vid h1{
+    font-size: 30px;
+  }
+
+  .ifr{
+    /* display: flex;
+    flex-direction: column; */
+    width: 70%;
+    /* padding: 10px; */
+  }
+
+  .ifr div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  iframe{
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    display: block;
+    box-shadow: 10px 10px 10px black;
+  }
+
+  audio{
+    display: none;
+  }
+
+  /* Tercer Bloque */
+
+  .Redes h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+  }
+
+ .Redes div{
+  width: 70%;
+ }
+
+ .R{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgba(0, 100, 22, 0.322);
+  border-radius: 15px;
+  border: 10px 10px 10px black;
+ }
