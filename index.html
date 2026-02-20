@@ -1,77 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio</title>
-  <link rel="stylesheet" href="EstiloP.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Ramirez | Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fondo de cuadrícula estilo Matrix/Terminal */
+        body {
+            background-color: #000;
+            background-image: linear-gradient(rgba(0, 255, 0, 0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0, 255, 0, 0.03) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .retro-shadow-orange {
+            box-shadow: 4px 4px 0px 0px rgba(249, 115, 22, 1); /* Sombra naranja dura */
+        }
+        .retro-shadow-green {
+            box-shadow: 4px 4px 0px 0px rgba(34, 197, 94, 1); /* Sombra verde dura */
+        }
+        /* Efecto de parpadeo para el cursor */
+        .cursor-blink {
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <a href="https://github.com/Viticooo" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/128/6424/6424084.png" alt="Gmail">
-    </a>
-    <h1><strong>Sobre Mi</strong></h1>
-    <a href="https://open.spotify.com/playlist/37i9dQZF1DXbITWG1ZJKYt" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/128/6424/6424102.png" alt="Spotify">
-    </a>
-  </header>
-  <audio src="Musica/Jazz 2.mp3" autoplay loop controls></audio>
-  <div class="bienvenido"><h1>Bienvenido</h1></div>
-  <section>
-    <div>
-      <h1>Tecnologias que sé utilizar a Nivel Basico</h1>
+<body class="text-green-500 font-mono p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+
+        <header class="border-4 border-green-500 p-4 mb-8 bg-black retro-shadow-orange text-center relative overflow-hidden">
+            <h1 class="text-4xl md:text-6xl font-bold text-orange-500 mb-2 tracking-widest">
+                > viticoo<span class="cursor-blink text-green-500">_</span>
+            </h1>
+            <marquee scrollamount="10" class="text-green-400 font-bold bg-gray-900 border-y-2 border-orange-500 py-1 mt-2">
+                [ ESTUDIANTE ING. SISTEMAS COMPUTACIONALES ] -> [ FULL-STACK / BACK-END DEV ] -> [ WOW ENJOYER ]
+            </marquee>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <aside class="md:col-span-1 space-y-6">
+                <nav class="border-2 border-green-500 p-4 bg-black retro-shadow-green">
+                    <h2 class="text-xl text-orange-500 font-bold border-b-2 border-green-500 mb-2">/ Directorio</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:bg-green-500 hover:text-black block px-2 py-1 transition-none">> index.html</a></li>
+                        <li><a href="https://github.com/viticooo" target="_blank" class="hover:bg-green-500 hover:text-black block px-2 py-1 transition-none">> github.exe</a></li>
+                        <li><a href="https://www.linkedin.com/in/victor-manuel-ramirez-bustamante-98789b329/" class="hover:bg-green-500 hover:text-black block px-2 py-1 transition-none">> LinkdeIn.exe</a></li>
+                    </ul>
+                </nav>
+
+                <div class="border-2 border-orange-500 p-4 bg-black">
+                    <h2 class="text-xl text-green-400 font-bold mb-2">/ Sys_Info</h2>
+                    <p class="text-sm">> Edad: 19</p>
+                    <p class="text-sm">> Pais: Venezuela</p>
+                    <p class="text-sm">> Nivel: Intermedio</p>
+                </div>
+                
+                <div class="border-2 border-green-500 p-4 bg-gray-900">
+                    <h2 class="text-md text-orange-500 font-bold mb-2">/ Tiempo Libre</h2>
+                    <p class="text-xs text-green-400">> WoW</p>
+                    <p class="text-xs text-green-400">> Warframe</p>
+                    <p class="text-xs text-green-400">> Dibujo</p>
+                </div>
+            </aside>
+
+            <main class="md:col-span-2 space-y-8">
+                
+                <section class="border-4 border-green-500 p-6 bg-black retro-shadow-green">
+                    <h2 class="text-2xl font-bold text-orange-500 mb-4">> ./sobre_mi.sh</h2>
+                    <p class="mb-4 text-green-400 leading-relaxed">
+                        Desarrollador enfocado en aplicaciones de escritorio, lógica del servidor y gestión de bases de datos. Disfruto creando soluciones robustas y explorando la arquitectura detrás de las aplicaciones.
+                    </p>
+                    <div class="mb-4">
+                        <span class="text-green-300 font-bold underline">Stack Tecnológico:</span>
+                        <div class="grid grid-cols-2 gap-2 mt-3 text-sm">
+                            <div>
+                                <span class="text-orange-400">> Dominio:</span>
+                                <ul class="list-none ml-2 text-green-500">
+                                    <li>- Python (Flask)</li>
+                                    <li>- C</li>
+                                    <li>- JavaScript</li>
+                                    <li>- HTML / CSS</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="text-orange-400">> Aprendiendo:</span>
+                                <ul class="list-none ml-2 text-green-500">
+                                    <li>- Django - Pandas</li>
+                                    <li>- Bases de datos (SQL/NoSQL)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="border-4 border-orange-500 p-6 bg-black">
+                    <h2 class="text-2xl font-bold text-green-500 mb-4">> ./proyectos/</h2>
+                    
+                    <div class="space-y-6">
+                        
+                        <a href="https://viticooo.github.io/Frisound/" target="_blank" class="block border border-dashed border-green-700 p-4 hover:border-orange-500 hover:bg-gray-900 transition-colors group">
+                            <h3 class="text-xl text-orange-400 font-bold mb-1 group-hover:text-orange-500">> Frisound _</h3>
+                            <p class="text-sm text-green-600 mb-3">Reproductor de música interactivo desarrollado para la web. Proyecto sencillo para aprender un poco mas sobre la web y sus componentes.</p>
+                            <span class="text-xs bg-black text-green-400 px-2 py-1 border border-green-500">JavaScript</span>
+                            <span class="text-xs bg-black text-orange-400 px-2 py-1 border border-orange-500">Web App</span>
+                        </a>
+
+                        <a href="https://viticooo.github.io/RandomizadorPokemon/" target="_blank" class="block border border-dashed border-green-700 p-4 hover:border-orange-500 hover:bg-gray-900 transition-colors group">
+                            <h3 class="text-xl text-orange-400 font-bold mb-1 group-hover:text-orange-500">> Randomon _</h3>
+                            <p class="text-sm text-green-600 mb-3">Aplicación web que consume la PokeAPI para funcionar como un randomizador de Pokémon, hecho con la idea de usarlo como herramienta de entretenimiento.</p>
+                            <span class="text-xs bg-black text-green-400 px-2 py-1 border border-green-500">API REST</span>
+                            <span class="text-xs bg-black text-green-400 px-2 py-1 border border-green-500">JavaScript</span>
+                        </a>
+
+                        <div class="border border-dashed border-green-700 p-4">
+                            <h3 class="text-xl text-green-500 font-bold mb-1">> Gestor de Clientes <span class="text-xs text-orange-500 animate-pulse">[Local]</span></h3>
+                            <p class="text-sm text-green-600 mb-3">Sistema en desarrollo para gestión de historiales clínicos/clientes, con generación de reportes en PDF y conexión a base de datos.</p>
+                            <span class="text-xs bg-black text-orange-400 px-2 py-1 border border-orange-500">Python</span>
+                            <span class="text-xs bg-black text-orange-400 px-2 py-1 border border-orange-500">Data Management</span>
+                        </div>
+
+                    </div>
+                </section>
+
+            </main>
+        </div>
+
+        <footer class="mt-8 border-t-2 border-green-700 pt-6 text-center text-xs text-green-600">
+            <p>> CONSTRUIDO POR VICTOR_RAMIREZ © 2026</p>
+            <p>> HOSTED EN GITHUB PAGES</p>
+        </footer>
+
     </div>
-    <div id="tec">
-      <label for="">HTML 5</label>
-      <img src="https://cdn-icons-png.flaticon.com/128/6422/6422223.png" alt="HTML" id="HTML">
-      <label for="">CSS 3</label>
-      <img src="https://cdn-icons-png.flaticon.com/128/6422/6422219.png" alt="CSS">
-      <label for="">PYTHON</label>
-      <img src="https://cdn-icons-png.flaticon.com/128/6422/6422231.png" alt="Python">
-      <label for="">C</label>
-      <img src="https://cdn-icons-png.flaticon.com/128/6422/6422218.png" alt="C">
-    </div>
-  </section>
-  <section class="C2">
-    <div class="vid">
-      <h1><pre>Mis canales de Youtube</pre></h1>
-    </div>
-    <div class="ifr">
-      <div>
-        <h2>Primer Canal</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/4nHWXfdPRUQ?si=h71OpawDbCbBc1X4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <hr>
-      <div>
-        <h2>Segundo Canal</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2APJts3g34M?si=IfmaOumSJngaXBb6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
-  <section class="Redes">
-    <h1>Redes Sociales</h1>
-    <div>
-      <div class="R">
-      <a href="">
-        <img src="https://cdn-icons-png.flaticon.com/128/6422/6422200.png" alt="">
-      </a>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit voluptate illo aliquid velit ex adipisci eos excepturi? Sapiente aut aliquam distinctio repellat deleniti magni harum perferendis minus sint iusto. Omnis!</p>
-      </div>
-      <div class="R">
-      <a href="">
-        <img src="https://cdn-icons-png.flaticon.com/128/12107/12107562.png" alt="">
-      </a>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit voluptate illo aliquid velit ex adipisci eos excepturi? Sapiente aut aliquam distinctio repellat deleniti magni harum perferendis minus sint iusto. Omnis!</p>
-      </div>
-      <div class="R">
-      <a href="">
-        <img src="https://cdn-icons-png.flaticon.com/128/6424/6424087.png" alt="">
-      </a>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit voluptate illo aliquid velit ex adipisci eos excepturi? Sapiente aut aliquam distinctio repellat deleniti magni harum perferendis minus sint iusto. Omnis!</p>
-      </div>
-    </div>
-  </section>
+
 </body>
 </html>
-
